@@ -1,0 +1,54 @@
+.rollingContainer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 0px auto;
+  padding: 50px;
+  width: 100%;
+  height: 300px;
+  background-image: radial-gradient(circle 248px at center, #16d9e3 0%, #30c7ec 47%, #46aef7 100%);
+}
+
+.leftContainer{
+  display: flex;
+  justify-content: center;
+  flex: 1;
+  color: aliceblue;
+  font-size: 46px;
+}
+
+.rightContainer{
+  display: flex;
+  flex: 1;
+  justify-content: space-around;
+  gap: 50px;
+}
+
+.numberContainer{
+  display: flex;
+  font-size: 30px;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.numberTitle{
+  font-size: 26px;
+  color: aliceblue;
+  text-align: center;
+}
+
+.numberContent{
+  font-size: 30px;
+  text-align: center;
+  color: aliceblue;
+}
+
+@media (max-width: 1024px) {
+  .rollingContainer {
+      flex-direction: column;
+      gap: 30px;
+      height: 400px;
+      margin-top: 250px;
+    }
+}
+

@@ -1,0 +1,54 @@
+/* Banner.module.css */
+.bannerContainer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 0px auto;
+  width: 90%;
+  height: 90vh; 
+}
+
+.textSection {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  gap: 10px;
+  padding: 100px 50px;
+}
+
+.title{
+  text-align: center;
+  font-size: 60px;
+  color: rgb(0, 140, 140);
+  font-weight: 900;
+}
+
+.content{
+  text-align: left;
+  font-size: 20px;
+  line-height: 35px;
+}
+
+.imageSection {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  flex: 1;
+  max-height: 400px;
+}
+
+
+@media (max-width: 1024px) {
+  .bannerContainer {
+      flex-direction: column;
+      
+  }
+
+  .textSection{
+    padding: 100px 20px;
+  }
+
+  .imageSection {
+    margin-bottom: 200px;
+  }
+}
